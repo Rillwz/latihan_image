@@ -16,12 +16,16 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Container(
+            color: Colors.black12,
             width: 200,
-            height: 200,
+            height: 300,
             padding: EdgeInsets.all(3),
             child: Image(
-              image: NetworkImage(
-                  'https://avatars.githubusercontent.com/u/73714271?v=4'),
+              image: AssetImage(
+                'images/icon.png',
+              ),
+              fit: BoxFit.contain,
+              repeat: ImageRepeat.repeat,
             ),
           ),
         ),
